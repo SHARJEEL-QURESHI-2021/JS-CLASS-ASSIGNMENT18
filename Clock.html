@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masjid Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <div>
+            <button onclick="on()" id="button1">ON</button> <button onclick="off()" id="button2">OFF</button>
+        </div>
+        <div id="main">
+            <div id="algn">
+                <ul>
+                    <li>
+                        <h2>Prayer Timing</h2>
+                    </li>
+                    <li>
+                        <input id="hours" class="size" placeholder="00" readonly></input>
+                        <input id="minutes" class="size" placeholder="00" readonly></input>
+                        <input id="seconds" class="size" placeholder="00" readonly></input>
+                        <input type="text" class="sizes1" placeholder="AM" id="session" readonly>
+                    </li>
+                    <li>
+                        <span class="spans">Al-Fajr</span><input type="text" id="fajr" class="cng" placeholder="0&nbsp;00" readonly>
+                    </li>
+                    <li>
+                        <span class="spans">Al-Zohr</span><input type="text" id="zohr" class="cng" placeholder="0&nbsp;00" readonly>
+                    </li>
+                    <li>
+                        <span class="spans">Al-Aasr</span><input type="text" id="aasr" class="cng" placeholder="0&nbsp;00" readonly>
+                    </li>
+                    <li>
+                        <span class="spans">Al-Magrib</span><input type="text" id="magr" placeholder="0&nbsp;00" readonly>
+                    </li>
+                    <li>
+                        <span class="spans">Al-Esha</span><input type="text" id="esha" class="cng" placeholder="0&nbsp;00" readonly>
+                    </li>
+                    <li>
+                        <span class="spans">Al-Jumma</span><input type="text" id="jumma" class="cng" placeholder="0&nbsp;00" readonly>
+                    </li>
+                    <li>
+                        <marquee width="260px" direction="left" id="show">&nbsp; 31`C &nbsp; Hijri = 1444 &nbsp; Al-Isha = 8:40 &nbsp; Al-Magrib = 7:13 &nbsp; Al-Aasr = 5:10
+                            &nbsp; Al-Zohr &nbsp; 12:29 &nbsp; Al-Fajr = 4:18 &nbsp; Chasht = 8:00 &nbsp; Ishrak = 5:56
+                            &nbsp; Zawal = 12:24 &nbsp; Tulu = 5:44 &nbsp; Month = <span id="month"></span> &nbsp; Day =
+                            <span id="day"></span> &nbsp; Date = <span id="date"></span>  
+                        </marquee>
+                    </li>
+                    <li>
+                        <input type="text" id="tim1" readonly>
+                    </li>
+                    <li>
+                        <span class="spans1">Intehai Waqt</span><input type="text" id="lstTime" placeholder="0&nbsp;00" readonly>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </center>
+    <script src="app.js"></script>
+</body>
+
+</html>
